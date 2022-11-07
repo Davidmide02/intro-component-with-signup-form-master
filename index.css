@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-repeat: no-repeats;
+    background-color: hsl(0, 100%, 74%);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+/* comtainer */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem auto 2rem;
+
+}
+/* the texts section class  */
+.text-container {
+    color: whitesmoke;
+    padding: 1rem 2rem 1rem 1rem;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    
+}
+
+/* tesxt section class h1 */
+.text-container h1 {
+    line-height: 3rem;
+    font-size: 3rem;
+    margin-right: 5rem;
+
+}
+
+/* tesxt section class p */
+.text-container p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+/* form contianer  */
+form {
+    background-color: whitesmoke;
+    margin-top: 1rem;
+    padding: 2rem 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    border-radius: 0.65rem;
+    box-shadow: 0px 6px rgba(29, 30, 29, 0.173);
+    width: 23rem;
+}
+
+/* try it button */
+.try-it-free-btn {
+    color: whitesmoke;
+    background-color: hsl(248, 32%, 49%);
+    padding: 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0px 6px rgba(29, 30, 29, 0.173);
+    
+    /* rgb(176, 177, 176) */
+}
+
+/* class container of each input and the error icon and message */
+.validation {
+    position: relative;
+
+}
+
+/* error icon  */
+.error-icon {
+    position: absolute;
+    top: 1.6rem;
+    right: 1rem;
+    display: none;
+}
+
+
+/* Error message */
+.error-message {
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    display: none;
+}
+
+/* the class to display the error icon and message */
+.validation.error .error-icon,
+.validation.error .error-message {
+    display: block;
+}
+
+
+
+
+/* the input  */
+input {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    width: 100%;
+}
+
+/* input on focus */
+input:focus {
+    outline-color: hsl(248, 32%, 49%);
+}
+
+/* submit button */
+
+button {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.9rem;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+/*  
+button of :hover
+*/
+button:hover {
+    background-color: hsl(154, 42%, 67%);
+}
+
+/* terms ans services class */
+.terms-service {
+    text-align: center;
+    margin: auto;
+    font-size: 11px;
+    color: hsl(246, 25%, 77%);
+
+}
+
+a {
+    color: hsl(0, 100%, 74%);
+}
+
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+.attribution a {
+    color: hsl(248, 32%, 49%);
+}
+
+
+/* responsiveness */
+@media screen and (max-width:480px) {
+
+    body {
+       
+        background-image: url(/images/bg-intro-mobile.png);
+        box-sizing: border-box;
+        width: 100%;
+
+    }
+
+    main {
+        flex-direction: column;
+        padding: 1rem 2rem 0rem;
+        margin: auto 2rem;
+    }
+
+    .text-container {
+        margin-bottom: 1rem;
+    }
+    
+.form-container{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+} 
+
+
+
+/* ## Colors
+
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700 */
